@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="35" passed="34" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-02-09T03:35:26 GMT-08:00" name="Command line suite" finished-at="2021-02-09T03:38:04 GMT-08:00" duration-ms="158245">
+    <groups>
+    </groups>
+    <test started-at="2021-02-09T03:35:26 GMT-08:00" name="Command line test" finished-at="2021-02-09T03:38:04 GMT-08:00" duration-ms="158245">
+      <class name="hpe.SSDSelectorTool.SSDServerCompTest">
+        <test-method signature="LetStart()[pri:0, instance:hpe.SSDSelectorTool.SSDServerCompTest@4e0ae11f]" started-at="2021-02-09T03:37:18 GMT-08:00" name="LetStart" finished-at="2021-02-09T03:37:33 GMT-08:00" duration-ms="14248" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LetStart -->
+        <test-method signature="ToVerifyWorkloadURL()[pri:1, instance:hpe.SSDSelectorTool.SSDServerCompTest@4e0ae11f]" started-at="2021-02-09T03:37:33 GMT-08:00" name="ToVerifyWorkloadURL" finished-at="2021-02-09T03:37:33 GMT-08:00" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ToVerifyWorkloadURL -->
+        <test-method signature="ToVerifyReadWorkloadLabel()[pri:2, instance:hpe.SSDSelectorTool.SSDServerCompTest@4e0ae11f]" started-at="2021-02-09T03:37:33 GMT-08:00" name="ToVerifyReadWorkloadLabel" finished-at="2021-02-09T03:37:33 GMT-08:00" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ToVerifyReadWorkloadLabel -->
+        <test-method signature="ToVerifyMixedWorkloadLabel()[pri:3, instance:hpe.SSDSelectorTool.SSDServerCompTest@4e0ae11f]" started-at="2021-02-09T03:37:33 GMT-08:00" name="ToVerifyMixedWorkloadLabel" finished-at="2021-02-09T03:37:33 GMT-08:00" duration-ms="30" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ToVerifyMixedWorkloadLabel -->
+        <test-method signature="ToVerifySelectReadAnDMixedWorkloads()[pri:4, instance:hpe.SSDSelectorTool.SSDServerCompTest@4e0ae11f]" started-at="2021-02-09T03:37:33 GMT-08:00" name="ToVerifySelectReadAnDMixedWorkloads" finished-at="2021-02-09T03:37:33 GMT-08:00" duration-ms="132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ToVerifySelectReadAnDMixedWorkloads -->
+        <test-method signature="ToVerifySSDTypesAutoSelected()[pri:5, instance:hpe.SSDSelectorTool.SSDServerCompTest@4e0ae11f]" started-at="2021-02-09T03:37:33 GMT-08:00" name="ToVerifySSDTypesAutoSelected" finished-at="2021-02-09T03:37:36 GMT-08:00" duration-ms="2973" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ToVerifySSDTypesAutoSelected -->
+        <test-method signature="ToVerifyServerTypeAndServerModel()[pri:6, instance:hpe.SSDSelectorTool.SSDServerCompTest@4e0ae11f]" started-at="2021-02-09T03:37:36 GMT-08:00" name="ToVerifyServerTypeAndServerModel" finished-at="2021-02-09T03:37:42 GMT-08:00" duration-ms="6227" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ToVerifyServerTypeAndServerModel -->
+        <test-method signature="ToVerifyDriveCapacityChange()[pri:7, instance:hpe.SSDSelectorTool.SSDServerCompTest@4e0ae11f]" started-at="2021-02-09T03:37:42 GMT-08:00" name="ToVerifyDriveCapacityChange" finished-at="2021-02-09T03:37:45 GMT-08:00" duration-ms="3420" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ToVerifyDriveCapacityChange -->
+        <test-method signature="ToVerifyNxtBtnDisabled()[pri:8, instance:hpe.SSDSelectorTool.SSDServerCompTest@4e0ae11f]" started-at="2021-02-09T03:37:45 GMT-08:00" name="ToVerifyNxtBtnDisabled" finished-at="2021-02-09T03:37:46 GMT-08:00" duration-ms="384" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ToVerifyNxtBtnDisabled -->
+        <test-method signature="ToVerifyCapacityMaxSlider()[pri:9, instance:hpe.SSDSelectorTool.SSDServerCompTest@4e0ae11f]" started-at="2021-02-09T03:37:46 GMT-08:00" name="ToVerifyCapacityMaxSlider" finished-at="2021-02-09T03:37:48 GMT-08:00" duration-ms="2028" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ToVerifyCapacityMaxSlider -->
+        <test-method signature="ToVerifyInterfaceTypeAutoSelected()[pri:10, instance:hpe.SSDSelectorTool.SSDServerCompTest@4e0ae11f]" started-at="2021-02-09T03:37:48 GMT-08:00" name="ToVerifyInterfaceTypeAutoSelected" finished-at="2021-02-09T03:37:51 GMT-08:00" duration-ms="3377" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ToVerifyInterfaceTypeAutoSelected -->
+        <test-method signature="ToVerifyFormFactorAutoSelected()[pri:11, instance:hpe.SSDSelectorTool.SSDServerCompTest@4e0ae11f]" started-at="2021-02-09T03:37:51 GMT-08:00" name="ToVerifyFormFactorAutoSelected" finished-at="2021-02-09T03:37:54 GMT-08:00" duration-ms="2510" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ToVerifyFormFactorAutoSelected -->
+        <test-method signature="ToVerifySKUMainstream()[pri:12, instance:hpe.SSDSelectorTool.SSDServerCompTest@4e0ae11f]" started-at="2021-02-09T03:37:54 GMT-08:00" name="ToVerifySKUMainstream" finished-at="2021-02-09T03:37:57 GMT-08:00" duration-ms="3468" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ToVerifySKUMainstream -->
+        <test-method signature="ToVerifySelectedConfigurationDisplayed()[pri:13, instance:hpe.SSDSelectorTool.SSDServerCompTest@4e0ae11f]" started-at="2021-02-09T03:37:57 GMT-08:00" name="ToVerifySelectedConfigurationDisplayed" finished-at="2021-02-09T03:38:00 GMT-08:00" duration-ms="2416" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ToVerifySelectedConfigurationDisplayed -->
+        <test-method signature="ToVerifySSDResults()[pri:14, instance:hpe.SSDSelectorTool.SSDServerCompTest@4e0ae11f]" started-at="2021-02-09T03:38:00 GMT-08:00" name="ToVerifySSDResults" finished-at="2021-02-09T03:38:04 GMT-08:00" duration-ms="4198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ToVerifySSDResults -->
+      </class> <!-- hpe.SSDSelectorTool.SSDServerCompTest -->
+      <class name="hpe.SSDSelectorTool.SSDIKnowPageTest">
+        <test-method is-config="true" signature="IKnowWhatINeed()[pri:0, instance:hpe.SSDSelectorTool.SSDIKnowPageTest@79defdc]" started-at="2021-02-09T03:35:26 GMT-08:00" name="IKnowWhatINeed" description="Launches the SSD Selector Tool Application" finished-at="2021-02-09T03:35:46 GMT-08:00" duration-ms="20835" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- IKnowWhatINeed -->
+        <test-method signature="ToVerifyIKnowWhatINeedURL()[pri:1, instance:hpe.SSDSelectorTool.SSDIKnowPageTest@79defdc]" started-at="2021-02-09T03:37:12 GMT-08:00" name="ToVerifyIKnowWhatINeedURL" description="Verifying the I Know What I Need URl" finished-at="2021-02-09T03:37:12 GMT-08:00" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ToVerifyIKnowWhatINeedURL -->
+        <test-method signature="ToVerifySSDResults()[pri:2, instance:hpe.SSDSelectorTool.SSDIKnowPageTest@79defdc]" started-at="2021-02-09T03:37:12 GMT-08:00" name="ToVerifySSDResults" description="Verifying the SSD Results with 250 SSDs" finished-at="2021-02-09T03:37:12 GMT-08:00" duration-ms="85" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [112 -  SSDs meet your requirements] but found [250 -  SSDs meet your requirements]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [112 -  SSDs meet your requirements] but found [250 -  SSDs meet your requirements]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at hpe.SSDSelectorTool.SSDIKnowPageTest.ToVerifySSDResults(SSDIKnowPageTest.java:107)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ToVerifySSDResults -->
+        <test-method signature="ToVerifyExcelFileResults()[pri:8, instance:hpe.SSDSelectorTool.SSDIKnowPageTest@79defdc]" started-at="2021-02-09T03:37:12 GMT-08:00" name="ToVerifyExcelFileResults" description="Verifying the Excel File Results" finished-at="2021-02-09T03:37:18 GMT-08:00" duration-ms="6108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ToVerifyExcelFileResults -->
+      </class> <!-- hpe.SSDSelectorTool.SSDIKnowPageTest -->
+      <class name="hpe.SSDSelectorTool.SSDCompleteTest">
+        <test-method signature="LetStart()[pri:0, instance:hpe.SSDSelectorTool.SSDCompleteTest@18317edc]" started-at="2021-02-09T03:35:47 GMT-08:00" name="LetStart" finished-at="2021-02-09T03:36:00 GMT-08:00" duration-ms="13314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LetStart -->
+        <test-method signature="ToVerifyWorkloadURL()[pri:1, instance:hpe.SSDSelectorTool.SSDCompleteTest@18317edc]" started-at="2021-02-09T03:36:00 GMT-08:00" name="ToVerifyWorkloadURL" finished-at="2021-02-09T03:36:00 GMT-08:00" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ToVerifyWorkloadURL -->
+        <test-method signature="ToVerifyNextBtn()[pri:2, instance:hpe.SSDSelectorTool.SSDCompleteTest@18317edc]" started-at="2021-02-09T03:36:00 GMT-08:00" name="ToVerifyNextBtn" finished-at="2021-02-09T03:36:00 GMT-08:00" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ToVerifyNextBtn -->
+        <test-method signature="ToVerifySelectALLWorkload()[pri:3, instance:hpe.SSDSelectorTool.SSDCompleteTest@18317edc]" started-at="2021-02-09T03:36:00 GMT-08:00" name="ToVerifySelectALLWorkload" finished-at="2021-02-09T03:36:02 GMT-08:00" duration-ms="1809" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ToVerifySelectALLWorkload -->
+        <test-method signature="ToVerifySSDTypeURL()[pri:4, instance:hpe.SSDSelectorTool.SSDCompleteTest@18317edc]" started-at="2021-02-09T03:36:02 GMT-08:00" name="ToVerifySSDTypeURL" finished-at="2021-02-09T03:36:02 GMT-08:00" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ToVerifySSDTypeURL -->
+        <test-method signature="ToVerifySSDTypeSelected()[pri:5, instance:hpe.SSDSelectorTool.SSDCompleteTest@18317edc]" started-at="2021-02-09T03:36:02 GMT-08:00" name="ToVerifySSDTypeSelected" finished-at="2021-02-09T03:36:04 GMT-08:00" duration-ms="1756" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ToVerifySSDTypeSelected -->
+        <test-method signature="ToVerifyServerTypeURL()[pri:6, instance:hpe.SSDSelectorTool.SSDCompleteTest@18317edc]" started-at="2021-02-09T03:36:04 GMT-08:00" name="ToVerifyServerTypeURL" finished-at="2021-02-09T03:36:04 GMT-08:00" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ToVerifyServerTypeURL -->
+        <test-method signature="ToVerifyServerTypeList()[pri:7, instance:hpe.SSDSelectorTool.SSDCompleteTest@18317edc]" started-at="2021-02-09T03:36:04 GMT-08:00" name="ToVerifyServerTypeList" finished-at="2021-02-09T03:36:05 GMT-08:00" duration-ms="1499" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ToVerifyServerTypeList -->
+        <test-method signature="ToVerifySeverModelList()[pri:8, instance:hpe.SSDSelectorTool.SSDCompleteTest@18317edc]" started-at="2021-02-09T03:36:05 GMT-08:00" name="ToVerifySeverModelList" finished-at="2021-02-09T03:36:15 GMT-08:00" duration-ms="9541" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ToVerifySeverModelList -->
+        <test-method signature="ToVerifySelectServerTypeAndServerModel()[pri:9, instance:hpe.SSDSelectorTool.SSDCompleteTest@18317edc]" started-at="2021-02-09T03:36:15 GMT-08:00" name="ToVerifySelectServerTypeAndServerModel" finished-at="2021-02-09T03:36:19 GMT-08:00" duration-ms="3957" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ToVerifySelectServerTypeAndServerModel -->
+        <test-method signature="ToVerfiyCapacityURL()[pri:10, instance:hpe.SSDSelectorTool.SSDCompleteTest@18317edc]" started-at="2021-02-09T03:36:19 GMT-08:00" name="ToVerfiyCapacityURL" finished-at="2021-02-09T03:36:20 GMT-08:00" duration-ms="1555" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ToVerfiyCapacityURL -->
+        <test-method signature="ToVerifyEditSelectedInterfaceOptions()[pri:11, instance:hpe.SSDSelectorTool.SSDCompleteTest@18317edc]" started-at="2021-02-09T03:36:20 GMT-08:00" name="ToVerifyEditSelectedInterfaceOptions" finished-at="2021-02-09T03:36:43 GMT-08:00" duration-ms="23043" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ToVerifyEditSelectedInterfaceOptions -->
+        <test-method signature="ToVerifyEditSelectedFormFactorOptions()[pri:12, instance:hpe.SSDSelectorTool.SSDCompleteTest@18317edc]" started-at="2021-02-09T03:36:43 GMT-08:00" name="ToVerifyEditSelectedFormFactorOptions" finished-at="2021-02-09T03:37:06 GMT-08:00" duration-ms="22822" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ToVerifyEditSelectedFormFactorOptions -->
+        <test-method signature="ToVerifyEditMainstreamOptions()[pri:13, instance:hpe.SSDSelectorTool.SSDCompleteTest@18317edc]" started-at="2021-02-09T03:37:06 GMT-08:00" name="ToVerifyEditMainstreamOptions" finished-at="2021-02-09T03:37:06 GMT-08:00" duration-ms="151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ToVerifyEditMainstreamOptions -->
+        <test-method signature="ToVerifyMainstreamSelectAll()[pri:14, instance:hpe.SSDSelectorTool.SSDCompleteTest@18317edc]" started-at="2021-02-09T03:37:06 GMT-08:00" name="ToVerifyMainstreamSelectAll" finished-at="2021-02-09T03:37:11 GMT-08:00" duration-ms="4691" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ToVerifyMainstreamSelectAll -->
+        <test-method signature="ToVerifySSDResultPage()[pri:15, instance:hpe.SSDSelectorTool.SSDCompleteTest@18317edc]" started-at="2021-02-09T03:37:11 GMT-08:00" name="ToVerifySSDResultPage" finished-at="2021-02-09T03:37:12 GMT-08:00" duration-ms="1088" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ToVerifySSDResultPage -->
+        <test-method signature="ToVerifySSDMainstreamResults()[pri:16, instance:hpe.SSDSelectorTool.SSDCompleteTest@18317edc]" started-at="2021-02-09T03:37:12 GMT-08:00" name="ToVerifySSDMainstreamResults" finished-at="2021-02-09T03:37:12 GMT-08:00" duration-ms="60" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ToVerifySSDMainstreamResults -->
+      </class> <!-- hpe.SSDSelectorTool.SSDCompleteTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

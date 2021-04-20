@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Command_line_suite" class="navigator-link">
+              <span class="suite-name border-failed">Command line suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Command_line_suite" class="navigator-link ">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Command_line_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Command_line_suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Command_line_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Command_line_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Command_line_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Command_line_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">35 methods, 1 failed,   34 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods failed suite-Command_line_suite"> (hide)</a> <!-- hide-methods failed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods failed suite-Command_line_suite"> (show)</a> <!-- show-methods failed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Command_line_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="hpe.SSDSelectorTool.SSDIKnowPageTest" class="method navigator-link" hash-for-method="ToVerifySSDResults">ToVerifySSDResults</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Command_line_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods passed suite-Command_line_suite"> (hide)</a> <!-- hide-methods passed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods passed suite-Command_line_suite"> (show)</a> <!-- show-methods passed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Command_line_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="hpe.SSDSelectorTool.SSDServerCompTest" class="method navigator-link" hash-for-method="LetStart">LetStart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="hpe.SSDSelectorTool.SSDCompleteTest" class="method navigator-link" hash-for-method="LetStart">LetStart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="hpe.SSDSelectorTool.SSDCompleteTest" class="method navigator-link" hash-for-method="ToVerfiyCapacityURL">ToVerfiyCapacityURL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="hpe.SSDSelectorTool.SSDServerCompTest" class="method navigator-link" hash-for-method="ToVerifyCapacityMaxSlider">ToVerifyCapacityMaxSlider</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="hpe.SSDSelectorTool.SSDServerCompTest" class="method navigator-link" hash-for-method="ToVerifyDriveCapacityChange">ToVerifyDriveCapacityChange</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="hpe.SSDSelectorTool.SSDCompleteTest" class="method navigator-link" hash-for-method="ToVerifyEditMainstreamOptions">ToVerifyEditMainstreamOptions</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="hpe.SSDSelectorTool.SSDCompleteTest" class="method navigator-link" hash-for-method="ToVerifyEditSelectedFormFactorOptions">ToVerifyEditSelectedFormFactorOptions</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="hpe.SSDSelectorTool.SSDCompleteTest" class="method navigator-link" hash-for-method="ToVerifyEditSelectedInterfaceOptions">ToVerifyEditSelectedInterfaceOptions</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="hpe.SSDSelectorTool.SSDIKnowPageTest" class="method navigator-link" hash-for-method="ToVerifyExcelFileResults">ToVerifyExcelFileResults</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="hpe.SSDSelectorTool.SSDServerCompTest" class="method navigator-link" hash-for-method="ToVerifyFormFactorAutoSelected">ToVerifyFormFactorAutoSelected</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="hpe.SSDSelectorTool.SSDIKnowPageTest" class="method navigator-link" hash-for-method="ToVerifyIKnowWhatINeedURL">ToVerifyIKnowWhatINeedURL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="hpe.SSDSelectorTool.SSDServerCompTest" class="method navigator-link" hash-for-method="ToVerifyInterfaceTypeAutoSelected">ToVerifyInterfaceTypeAutoSelected</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="hpe.SSDSelectorTool.SSDCompleteTest" class="method navigator-link" hash-for-method="ToVerifyMainstreamSelectAll">ToVerifyMainstreamSelectAll</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="hpe.SSDSelectorTool.SSDServerCompTest" class="method navigator-link" hash-for-method="ToVerifyMixedWorkloadLabel">ToVerifyMixedWorkloadLabel</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="hpe.SSDSelectorTool.SSDCompleteTest" class="method navigator-link" hash-for-method="ToVerifyNextBtn">ToVerifyNextBtn</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="hpe.SSDSelectorTool.SSDServerCompTest" class="method navigator-link" hash-for-method="ToVerifyNxtBtnDisabled">ToVerifyNxtBtnDisabled</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="hpe.SSDSelectorTool.SSDServerCompTest" class="method navigator-link" hash-for-method="ToVerifyReadWorkloadLabel">ToVerifyReadWorkloadLabel</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="hpe.SSDSelectorTool.SSDServerCompTest" class="method navigator-link" hash-for-method="ToVerifySKUMainstream">ToVerifySKUMainstream</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="hpe.SSDSelectorTool.SSDCompleteTest" class="method navigator-link" hash-for-method="ToVerifySSDMainstreamResults">ToVerifySSDMainstreamResults</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="hpe.SSDSelectorTool.SSDCompleteTest" class="method navigator-link" hash-for-method="ToVerifySSDResultPage">ToVerifySSDResultPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="hpe.SSDSelectorTool.SSDServerCompTest" class="method navigator-link" hash-for-method="ToVerifySSDResults">ToVerifySSDResults</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="hpe.SSDSelectorTool.SSDCompleteTest" class="method navigator-link" hash-for-method="ToVerifySSDTypeSelected">ToVerifySSDTypeSelected</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="hpe.SSDSelectorTool.SSDCompleteTest" class="method navigator-link" hash-for-method="ToVerifySSDTypeURL">ToVerifySSDTypeURL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="hpe.SSDSelectorTool.SSDServerCompTest" class="method navigator-link" hash-for-method="ToVerifySSDTypesAutoSelected">ToVerifySSDTypesAutoSelected</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="hpe.SSDSelectorTool.SSDCompleteTest" class="method navigator-link" hash-for-method="ToVerifySelectALLWorkload">ToVerifySelectALLWorkload</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="hpe.SSDSelectorTool.SSDServerCompTest" class="method navigator-link" hash-for-method="ToVerifySelectReadAnDMixedWorkloads">ToVerifySelectReadAnDMixedWorkloads</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="hpe.SSDSelectorTool.SSDCompleteTest" class="method navigator-link" hash-for-method="ToVerifySelectServerTypeAndServerModel">ToVerifySelectServerTypeAndServerModel</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="hpe.SSDSelectorTool.SSDServerCompTest" class="method navigator-link" hash-for-method="ToVerifySelectedConfigurationDisplayed">ToVerifySelectedConfigurationDisplayed</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="hpe.SSDSelectorTool.SSDServerCompTest" class="method navigator-link" hash-for-method="ToVerifyServerTypeAndServerModel">ToVerifyServerTypeAndServerModel</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="hpe.SSDSelectorTool.SSDCompleteTest" class="method navigator-link" hash-for-method="ToVerifyServerTypeList">ToVerifyServerTypeList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="hpe.SSDSelectorTool.SSDCompleteTest" class="method navigator-link" hash-for-method="ToVerifyServerTypeURL">ToVerifyServerTypeURL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="hpe.SSDSelectorTool.SSDCompleteTest" class="method navigator-link" hash-for-method="ToVerifySeverModelList">ToVerifySeverModelList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="hpe.SSDSelectorTool.SSDCompleteTest" class="method navigator-link" hash-for-method="ToVerifyWorkloadURL">ToVerifyWorkloadURL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="hpe.SSDSelectorTool.SSDServerCompTest" class="method navigator-link" hash-for-method="ToVerifyWorkloadURL">ToVerifyWorkloadURL</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Command_line_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Command_line_suite" class="panel Command_line_suite">
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">hpe.SSDSelectorTool.SSDIKnowPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ToVerifySSDResults">
+                  </a> <!-- ToVerifySSDResults -->
+                  <span class="method-name">ToVerifySSDResults</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [112 -  SSDs meet your requirements] but found [250 -  SSDs meet your requirements]
+	at hpe.SSDSelectorTool.SSDIKnowPageTest.ToVerifySSDResults(SSDIKnowPageTest.java:107)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 42 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verifying the SSD Results with 250 SSDs)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">hpe.SSDSelectorTool.SSDServerCompTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LetStart">
+                  </a> <!-- LetStart -->
+                  <span class="method-name">LetStart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ToVerifyCapacityMaxSlider">
+                  </a> <!-- ToVerifyCapacityMaxSlider -->
+                  <span class="method-name">ToVerifyCapacityMaxSlider</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ToVerifyDriveCapacityChange">
+                  </a> <!-- ToVerifyDriveCapacityChange -->
+                  <span class="method-name">ToVerifyDriveCapacityChange</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ToVerifyFormFactorAutoSelected">
+                  </a> <!-- ToVerifyFormFactorAutoSelected -->
+                  <span class="method-name">ToVerifyFormFactorAutoSelected</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ToVerifyInterfaceTypeAutoSelected">
+                  </a> <!-- ToVerifyInterfaceTypeAutoSelected -->
+                  <span class="method-name">ToVerifyInterfaceTypeAutoSelected</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ToVerifyMixedWorkloadLabel">
+                  </a> <!-- ToVerifyMixedWorkloadLabel -->
+                  <span class="method-name">ToVerifyMixedWorkloadLabel</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ToVerifyNxtBtnDisabled">
+                  </a> <!-- ToVerifyNxtBtnDisabled -->
+                  <span class="method-name">ToVerifyNxtBtnDisabled</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ToVerifyReadWorkloadLabel">
+                  </a> <!-- ToVerifyReadWorkloadLabel -->
+                  <span class="method-name">ToVerifyReadWorkloadLabel</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ToVerifySKUMainstream">
+                  </a> <!-- ToVerifySKUMainstream -->
+                  <span class="method-name">ToVerifySKUMainstream</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ToVerifySSDResults">
+                  </a> <!-- ToVerifySSDResults -->
+                  <span class="method-name">ToVerifySSDResults</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ToVerifySSDTypesAutoSelected">
+                  </a> <!-- ToVerifySSDTypesAutoSelected -->
+                  <span class="method-name">ToVerifySSDTypesAutoSelected</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ToVerifySelectReadAnDMixedWorkloads">
+                  </a> <!-- ToVerifySelectReadAnDMixedWorkloads -->
+                  <span class="method-name">ToVerifySelectReadAnDMixedWorkloads</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ToVerifySelectedConfigurationDisplayed">
+                  </a> <!-- ToVerifySelectedConfigurationDisplayed -->
+                  <span class="method-name">ToVerifySelectedConfigurationDisplayed</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ToVerifyServerTypeAndServerModel">
+                  </a> <!-- ToVerifyServerTypeAndServerModel -->
+                  <span class="method-name">ToVerifyServerTypeAndServerModel</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ToVerifyWorkloadURL">
+                  </a> <!-- ToVerifyWorkloadURL -->
+                  <span class="method-name">ToVerifyWorkloadURL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">hpe.SSDSelectorTool.SSDIKnowPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ToVerifyExcelFileResults">
+                  </a> <!-- ToVerifyExcelFileResults -->
+                  <span class="method-name">ToVerifyExcelFileResults</span>
+                  <em>
+(Verifying the Excel File Results)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ToVerifyIKnowWhatINeedURL">
+                  </a> <!-- ToVerifyIKnowWhatINeedURL -->
+                  <span class="method-name">ToVerifyIKnowWhatINeedURL</span>
+                  <em>
+(Verifying the I Know What I Need URl)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">hpe.SSDSelectorTool.SSDCompleteTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LetStart">
+                  </a> <!-- LetStart -->
+                  <span class="method-name">LetStart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ToVerfiyCapacityURL">
+                  </a> <!-- ToVerfiyCapacityURL -->
+                  <span class="method-name">ToVerfiyCapacityURL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ToVerifyEditMainstreamOptions">
+                  </a> <!-- ToVerifyEditMainstreamOptions -->
+                  <span class="method-name">ToVerifyEditMainstreamOptions</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ToVerifyEditSelectedFormFactorOptions">
+                  </a> <!-- ToVerifyEditSelectedFormFactorOptions -->
+                  <span class="method-name">ToVerifyEditSelectedFormFactorOptions</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ToVerifyEditSelectedInterfaceOptions">
+                  </a> <!-- ToVerifyEditSelectedInterfaceOptions -->
+                  <span class="method-name">ToVerifyEditSelectedInterfaceOptions</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ToVerifyMainstreamSelectAll">
+                  </a> <!-- ToVerifyMainstreamSelectAll -->
+                  <span class="method-name">ToVerifyMainstreamSelectAll</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ToVerifyNextBtn">
+                  </a> <!-- ToVerifyNextBtn -->
+                  <span class="method-name">ToVerifyNextBtn</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ToVerifySSDMainstreamResults">
+                  </a> <!-- ToVerifySSDMainstreamResults -->
+                  <span class="method-name">ToVerifySSDMainstreamResults</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ToVerifySSDResultPage">
+                  </a> <!-- ToVerifySSDResultPage -->
+                  <span class="method-name">ToVerifySSDResultPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ToVerifySSDTypeSelected">
+                  </a> <!-- ToVerifySSDTypeSelected -->
+                  <span class="method-name">ToVerifySSDTypeSelected</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ToVerifySSDTypeURL">
+                  </a> <!-- ToVerifySSDTypeURL -->
+                  <span class="method-name">ToVerifySSDTypeURL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ToVerifySelectALLWorkload">
+                  </a> <!-- ToVerifySelectALLWorkload -->
+                  <span class="method-name">ToVerifySelectALLWorkload</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ToVerifySelectServerTypeAndServerModel">
+                  </a> <!-- ToVerifySelectServerTypeAndServerModel -->
+                  <span class="method-name">ToVerifySelectServerTypeAndServerModel</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ToVerifyServerTypeList">
+                  </a> <!-- ToVerifyServerTypeList -->
+                  <span class="method-name">ToVerifyServerTypeList</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ToVerifyServerTypeURL">
+                  </a> <!-- ToVerifyServerTypeURL -->
+                  <span class="method-name">ToVerifyServerTypeURL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ToVerifySeverModelList">
+                  </a> <!-- ToVerifySeverModelList -->
+                  <span class="method-name">ToVerifySeverModelList</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ToVerifyWorkloadURL">
+                  </a> <!-- ToVerifyWorkloadURL -->
+                  <span class="method-name">ToVerifyWorkloadURL</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+        </div> <!-- panel Command_line_suite -->
+        <div panel-name="test-xml-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Command line suite&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Command line test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;hpe.SSDSelectorTool.AppTest&quot;/&gt;
+      &lt;class name=&quot;hpe.SSDSelectorTool.SSDCompleteTest&quot;/&gt;
+      &lt;class name=&quot;hpe.SSDSelectorTool.SSDIKnowPageTest&quot;/&gt;
+      &lt;class name=&quot;hpe.SSDSelectorTool.SSDServerCompTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Command line test --&gt;
+&lt;/suite&gt; &lt;!-- Command line suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Command line test (4 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Command_line_suite');
+function tableData_Command_line_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(35);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'ToVerifyEditSelectedInterfaceOptions')
+data.setCell(0, 2, 'hpe.SSDSelectorTool.SSDCompleteTest')
+data.setCell(0, 3, 23043);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'ToVerifyEditSelectedFormFactorOptions')
+data.setCell(1, 2, 'hpe.SSDSelectorTool.SSDCompleteTest')
+data.setCell(1, 3, 22822);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'LetStart')
+data.setCell(2, 2, 'hpe.SSDSelectorTool.SSDServerCompTest')
+data.setCell(2, 3, 14248);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'LetStart')
+data.setCell(3, 2, 'hpe.SSDSelectorTool.SSDCompleteTest')
+data.setCell(3, 3, 13314);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'ToVerifySeverModelList')
+data.setCell(4, 2, 'hpe.SSDSelectorTool.SSDCompleteTest')
+data.setCell(4, 3, 9541);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'ToVerifyServerTypeAndServerModel')
+data.setCell(5, 2, 'hpe.SSDSelectorTool.SSDServerCompTest')
+data.setCell(5, 3, 6227);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'ToVerifyExcelFileResults')
+data.setCell(6, 2, 'hpe.SSDSelectorTool.SSDIKnowPageTest')
+data.setCell(6, 3, 6108);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'ToVerifyMainstreamSelectAll')
+data.setCell(7, 2, 'hpe.SSDSelectorTool.SSDCompleteTest')
+data.setCell(7, 3, 4691);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'ToVerifySSDResults')
+data.setCell(8, 2, 'hpe.SSDSelectorTool.SSDServerCompTest')
+data.setCell(8, 3, 4198);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'ToVerifySelectServerTypeAndServerModel')
+data.setCell(9, 2, 'hpe.SSDSelectorTool.SSDCompleteTest')
+data.setCell(9, 3, 3957);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'ToVerifySKUMainstream')
+data.setCell(10, 2, 'hpe.SSDSelectorTool.SSDServerCompTest')
+data.setCell(10, 3, 3468);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'ToVerifyDriveCapacityChange')
+data.setCell(11, 2, 'hpe.SSDSelectorTool.SSDServerCompTest')
+data.setCell(11, 3, 3420);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'ToVerifyInterfaceTypeAutoSelected')
+data.setCell(12, 2, 'hpe.SSDSelectorTool.SSDServerCompTest')
+data.setCell(12, 3, 3377);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'ToVerifySSDTypesAutoSelected')
+data.setCell(13, 2, 'hpe.SSDSelectorTool.SSDServerCompTest')
+data.setCell(13, 3, 2973);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'ToVerifyFormFactorAutoSelected')
+data.setCell(14, 2, 'hpe.SSDSelectorTool.SSDServerCompTest')
+data.setCell(14, 3, 2510);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'ToVerifySelectedConfigurationDisplayed')
+data.setCell(15, 2, 'hpe.SSDSelectorTool.SSDServerCompTest')
+data.setCell(15, 3, 2416);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'ToVerifyCapacityMaxSlider')
+data.setCell(16, 2, 'hpe.SSDSelectorTool.SSDServerCompTest')
+data.setCell(16, 3, 2028);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'ToVerifySelectALLWorkload')
+data.setCell(17, 2, 'hpe.SSDSelectorTool.SSDCompleteTest')
+data.setCell(17, 3, 1809);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'ToVerifySSDTypeSelected')
+data.setCell(18, 2, 'hpe.SSDSelectorTool.SSDCompleteTest')
+data.setCell(18, 3, 1756);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'ToVerfiyCapacityURL')
+data.setCell(19, 2, 'hpe.SSDSelectorTool.SSDCompleteTest')
+data.setCell(19, 3, 1555);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'ToVerifyServerTypeList')
+data.setCell(20, 2, 'hpe.SSDSelectorTool.SSDCompleteTest')
+data.setCell(20, 3, 1499);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'ToVerifySSDResultPage')
+data.setCell(21, 2, 'hpe.SSDSelectorTool.SSDCompleteTest')
+data.setCell(21, 3, 1088);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'ToVerifyNxtBtnDisabled')
+data.setCell(22, 2, 'hpe.SSDSelectorTool.SSDServerCompTest')
+data.setCell(22, 3, 384);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'ToVerifyEditMainstreamOptions')
+data.setCell(23, 2, 'hpe.SSDSelectorTool.SSDCompleteTest')
+data.setCell(23, 3, 151);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'ToVerifySelectReadAnDMixedWorkloads')
+data.setCell(24, 2, 'hpe.SSDSelectorTool.SSDServerCompTest')
+data.setCell(24, 3, 132);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'ToVerifySSDResults')
+data.setCell(25, 2, 'hpe.SSDSelectorTool.SSDIKnowPageTest')
+data.setCell(25, 3, 85);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'ToVerifySSDMainstreamResults')
+data.setCell(26, 2, 'hpe.SSDSelectorTool.SSDCompleteTest')
+data.setCell(26, 3, 60);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'ToVerifyMixedWorkloadLabel')
+data.setCell(27, 2, 'hpe.SSDSelectorTool.SSDServerCompTest')
+data.setCell(27, 3, 30);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'ToVerifyNextBtn')
+data.setCell(28, 2, 'hpe.SSDSelectorTool.SSDCompleteTest')
+data.setCell(28, 3, 29);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'ToVerifyReadWorkloadLabel')
+data.setCell(29, 2, 'hpe.SSDSelectorTool.SSDServerCompTest')
+data.setCell(29, 3, 29);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'ToVerifyWorkloadURL')
+data.setCell(30, 2, 'hpe.SSDSelectorTool.SSDCompleteTest')
+data.setCell(30, 3, 17);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'ToVerifyServerTypeURL')
+data.setCell(31, 2, 'hpe.SSDSelectorTool.SSDCompleteTest')
+data.setCell(31, 3, 12);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'ToVerifyWorkloadURL')
+data.setCell(32, 2, 'hpe.SSDSelectorTool.SSDServerCompTest')
+data.setCell(32, 3, 10);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'ToVerifySSDTypeURL')
+data.setCell(33, 2, 'hpe.SSDSelectorTool.SSDCompleteTest')
+data.setCell(33, 3, 8);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'ToVerifyIKnowWhatINeedURL')
+data.setCell(34, 2, 'hpe.SSDSelectorTool.SSDIKnowPageTest')
+data.setCell(34, 3, 5);
+window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-Command_line_suite">
+              </div> <!-- times-div-Command_line_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">hpe.SSDSelectorTool.SSDIKnowPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">IKnowWhatINeed</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">hpe.SSDSelectorTool.SSDCompleteTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">LetStart</span>
+                <span class="method-start">21022 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ToVerifyWorkloadURL</span>
+                <span class="method-start">34490 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ToVerifyNextBtn</span>
+                <span class="method-start">34508 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ToVerifySelectALLWorkload</span>
+                <span class="method-start">34538 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ToVerifySSDTypeURL</span>
+                <span class="method-start">36348 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ToVerifySSDTypeSelected</span>
+                <span class="method-start">36357 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ToVerifyServerTypeURL</span>
+                <span class="method-start">38114 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ToVerifyServerTypeList</span>
+                <span class="method-start">38127 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ToVerifySeverModelList</span>
+                <span class="method-start">39627 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ToVerifySelectServerTypeAndServerModel</span>
+                <span class="method-start">49169 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ToVerfiyCapacityURL</span>
+                <span class="method-start">53126 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ToVerifyEditSelectedInterfaceOptions</span>
+                <span class="method-start">54682 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ToVerifyEditSelectedFormFactorOptions</span>
+                <span class="method-start">77726 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ToVerifyEditMainstreamOptions</span>
+                <span class="method-start">100549 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ToVerifyMainstreamSelectAll</span>
+                <span class="method-start">100701 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ToVerifySSDResultPage</span>
+                <span class="method-start">105393 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ToVerifySSDMainstreamResults</span>
+                <span class="method-start">106482 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">hpe.SSDSelectorTool.SSDIKnowPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">ToVerifyIKnowWhatINeedURL</span>
+                <span class="method-start">106544 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ToVerifySSDResults</span>
+                <span class="method-start">106550 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ToVerifyExcelFileResults</span>
+                <span class="method-start">106658 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">hpe.SSDSelectorTool.SSDServerCompTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">LetStart</span>
+                <span class="method-start">112775 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ToVerifyWorkloadURL</span>
+                <span class="method-start">127026 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ToVerifyReadWorkloadLabel</span>
+                <span class="method-start">127037 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ToVerifyMixedWorkloadLabel</span>
+                <span class="method-start">127067 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ToVerifySelectReadAnDMixedWorkloads</span>
+                <span class="method-start">127098 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ToVerifySSDTypesAutoSelected</span>
+                <span class="method-start">127231 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ToVerifyServerTypeAndServerModel</span>
+                <span class="method-start">130205 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ToVerifyDriveCapacityChange</span>
+                <span class="method-start">136433 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ToVerifyNxtBtnDisabled</span>
+                <span class="method-start">139855 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ToVerifyCapacityMaxSlider</span>
+                <span class="method-start">140240 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ToVerifyInterfaceTypeAutoSelected</span>
+                <span class="method-start">142270 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ToVerifyFormFactorAutoSelected</span>
+                <span class="method-start">145647 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ToVerifySKUMainstream</span>
+                <span class="method-start">148158 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ToVerifySelectedConfigurationDisplayed</span>
+                <span class="method-start">151626 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ToVerifySSDResults</span>
+                <span class="method-start">154043 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

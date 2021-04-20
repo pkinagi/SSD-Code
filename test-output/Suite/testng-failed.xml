@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="appURL" value="https://google.com"/>
+  <parameter name="browserType" value="chrome"/>
+  <listeners>
+    <listener class-name="hpe.SSDSelectorTool.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="IKnowPageTest(failed)">
+    <classes>
+      <class name="hpe.SSDSelectorTool.SSDIKnowPageTest">
+        <methods>
+          <include name="ToVerifyInterfaceOptionSATAResults"/>
+          <include name="ToVerifyExcelFileResults"/>
+          <include name="ToVerifyFormFactorOptionM2eResults"/>
+          <include name="ToVerifyInterfaceOptionNVMeResults"/>
+          <include name="TearDown"/>
+          <include name="IKnowWhatINeed"/>
+        </methods>
+      </class> <!-- hpe.SSDSelectorTool.SSDIKnowPageTest -->
+    </classes>
+  </test> <!-- IKnowPageTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose ="1" name="SSD Selector Tool Regression Test Suite">
+	<listeners>
+		<listener class-name="hpe.SSDSelectorTool.Listeners"/>
+	</listeners>
+	<test  name="Automation Test Suite for SSD Selector Tool">
+    	<classes>
+      		<class name="hpe.SSDSelectorTool.SSDWorkLoad"/>
+      		<class name="hpe.SSDSelectorTool.SSDType"/>
+      		<class name="hpe.SSDSelectorTool.SSDServerType"/>
+      		<class name="hpe.SSDSelectorTool.SSDDrvCapacity"/>
+      		<class name="hpe.SSDSelectorTool.SSDInterfaceType"/>
+	      	<class name="hpe.SSDSelectorTool.SSDFormFactorType"/>
+	      	<class name="hpe.SSDSelectorTool.SSDBestAvailPage"/>
+      		<class name="hpe.SSDSelectorTool.SSDResultsPages"/>
+    	</classes>
+	</test> 
+</suite>

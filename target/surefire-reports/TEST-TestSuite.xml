@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="35" failures="1" name="TestSuite" time="137.026" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="14.0.2+12-46"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-14.0.2\bin"/>
+    <property name="user.country.format" value="BB"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\HPe WorkSpace\SSD Selector\SSDSelectorTool"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\HPe WorkSpace\SSD Selector\SSDSelectorTool"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.runtime.version" value="14.0.2+12-46"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\user\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="D:\HPe WorkSpace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf12117985622256827383.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-14.0.2\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jdk-14.0.2/bin/server;C:/Program Files/Java/jdk-14.0.2/bin;C:\Program Files\Microsoft MPI\Bin\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\Git\cmd;D:\HPe WorkSpace\apache-maven-3.6.3-bin\apache-maven-3.6.3\bin;D:\GitRepo\hpe SSD Project\Driver;C:\Program Files\PuTTY\;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\Users\user\AppData\Local\Microsoft\WindowsApps;C:\Users\user\AppData\Local\GitHubDesktop\bin;C:\Users\user\Desktop;;."/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="58.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\user"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.specification.version" value="14"/>
+    <property name="user.name" value="user"/>
+    <property name="java.class.path" value="C:\Users\user\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_1.16.0.20200610-1735\jars\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="14"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B package"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-14.0.2"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="14.0.2"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="D:\HPe WorkSpace\SSD Selector\SSDSelectorTool\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2020-07-14"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="hpe.SSDSelectorTool.SSDCompleteTest" name="LetStart" time="13.318"/>
+  <testcase classname="hpe.SSDSelectorTool.SSDCompleteTest" name="ToVerifyWorkloadURL" time="0.016"/>
+  <testcase classname="hpe.SSDSelectorTool.SSDCompleteTest" name="ToVerifyNextBtn" time="0.03"/>
+  <testcase classname="hpe.SSDSelectorTool.SSDCompleteTest" name="ToVerifySelectALLWorkload" time="1.808"/>
+  <testcase classname="hpe.SSDSelectorTool.SSDCompleteTest" name="ToVerifySSDTypeURL" time="0.007"/>
+  <testcase classname="hpe.SSDSelectorTool.SSDCompleteTest" name="ToVerifySSDTypeSelected" time="1.756"/>
+  <testcase classname="hpe.SSDSelectorTool.SSDCompleteTest" name="ToVerifyServerTypeURL" time="0.011"/>
+  <testcase classname="hpe.SSDSelectorTool.SSDCompleteTest" name="ToVerifyServerTypeList" time="1.499"/>
+  <testcase classname="hpe.SSDSelectorTool.SSDCompleteTest" name="ToVerifySeverModelList" time="9.541"/>
+  <testcase classname="hpe.SSDSelectorTool.SSDCompleteTest" name="ToVerifySelectServerTypeAndServerModel" time="3.957"/>
+  <testcase classname="hpe.SSDSelectorTool.SSDCompleteTest" name="ToVerfiyCapacityURL" time="1.555"/>
+  <testcase classname="hpe.SSDSelectorTool.SSDCompleteTest" name="ToVerifyEditSelectedInterfaceOptions" time="23.043"/>
+  <testcase classname="hpe.SSDSelectorTool.SSDCompleteTest" name="ToVerifyEditSelectedFormFactorOptions" time="22.828"/>
+  <testcase classname="hpe.SSDSelectorTool.SSDCompleteTest" name="ToVerifyEditMainstreamOptions" time="0.146"/>
+  <testcase classname="hpe.SSDSelectorTool.SSDCompleteTest" name="ToVerifyMainstreamSelectAll" time="4.691"/>
+  <testcase classname="hpe.SSDSelectorTool.SSDCompleteTest" name="ToVerifySSDResultPage" time="1.088"/>
+  <testcase classname="hpe.SSDSelectorTool.SSDCompleteTest" name="ToVerifySSDMainstreamResults" time="0.06"/>
+  <testcase classname="hpe.SSDSelectorTool.SSDIKnowPageTest" name="ToVerifyIKnowWhatINeedURL" time="0.006"/>
+  <testcase classname="hpe.SSDSelectorTool.SSDIKnowPageTest" name="ToVerifySSDResults" time="0.108">
+    <failure message="expected [112 -  SSDs meet your requirements] but found [250 -  SSDs meet your requirements]" type="java.lang.AssertionError">java.lang.AssertionError: expected [112 -  SSDs meet your requirements] but found [250 -  SSDs meet your requirements]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at hpe.SSDSelectorTool.SSDIKnowPageTest.ToVerifySSDResults(SSDIKnowPageTest.java:107)
+</failure>
+  </testcase>
+  <testcase classname="hpe.SSDSelectorTool.SSDIKnowPageTest" name="ToVerifyExcelFileResults" time="6.107"/>
+  <testcase classname="hpe.SSDSelectorTool.SSDServerCompTest" name="LetStart" time="14.251"/>
+  <testcase classname="hpe.SSDSelectorTool.SSDServerCompTest" name="ToVerifyWorkloadURL" time="0.008"/>
+  <testcase classname="hpe.SSDSelectorTool.SSDServerCompTest" name="ToVerifyReadWorkloadLabel" time="0.03"/>
+  <testcase classname="hpe.SSDSelectorTool.SSDServerCompTest" name="ToVerifyMixedWorkloadLabel" time="0.029"/>
+  <testcase classname="hpe.SSDSelectorTool.SSDServerCompTest" name="ToVerifySelectReadAnDMixedWorkloads" time="0.132"/>
+  <testcase classname="hpe.SSDSelectorTool.SSDServerCompTest" name="ToVerifySSDTypesAutoSelected" time="2.973"/>
+  <testcase classname="hpe.SSDSelectorTool.SSDServerCompTest" name="ToVerifyServerTypeAndServerModel" time="6.228"/>
+  <testcase classname="hpe.SSDSelectorTool.SSDServerCompTest" name="ToVerifyDriveCapacityChange" time="3.421"/>
+  <testcase classname="hpe.SSDSelectorTool.SSDServerCompTest" name="ToVerifyNxtBtnDisabled" time="0.384"/>
+  <testcase classname="hpe.SSDSelectorTool.SSDServerCompTest" name="ToVerifyCapacityMaxSlider" time="2.029"/>
+  <testcase classname="hpe.SSDSelectorTool.SSDServerCompTest" name="ToVerifyInterfaceTypeAutoSelected" time="3.376"/>
+  <testcase classname="hpe.SSDSelectorTool.SSDServerCompTest" name="ToVerifyFormFactorAutoSelected" time="2.508"/>
+  <testcase classname="hpe.SSDSelectorTool.SSDServerCompTest" name="ToVerifySKUMainstream" time="3.467"/>
+  <testcase classname="hpe.SSDSelectorTool.SSDServerCompTest" name="ToVerifySelectedConfigurationDisplayed" time="2.416"/>
+  <testcase classname="hpe.SSDSelectorTool.SSDServerCompTest" name="ToVerifySSDResults" time="4.199"/>
+</testsuite>

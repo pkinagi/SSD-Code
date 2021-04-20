@@ -1,0 +1,605 @@
+<html>
+<head>
+<title>TestNG:  Automation Test Suite for SSD Selector Tool</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Automation Test Suite for SSD Selector Tool</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>75/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Feb 01 04:13:54 PST 2021</td>
+</tr>
+<tr><td>Total time:</td><td>112 seconds (112434 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDResultsPages.ToVerifyReadPerformanceLabel()'><b>ToVerifyReadPerformanceLabel</b><br>Test class: hpe.SSDSelectorTool.SSDResultsPages</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;collapse1&quot;]/div/div[4]/div/div[2]/div[2]/div/div[4]/div[1]/div[3]/div/div[1]&quot;}
+  (Session info: chrome=88.0.4324.104)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-D27FDN2&apos;, ip: &apos;16.214.208.221&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60885}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fa976167618717157b5c5cdaf2fae000
+*** Element info: {Using=xpath, value=//*[@id=&quot;collapse1&quot;]/div/div[4]/div/div[2]/div[2]/div/div[4]/div[1]/div[3]/div/div[1]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy14.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy18.getText(Unknown Source)
+	at SSDPageObjects.SSDResultPage.ResultReadPerformanceLabel(SSDResultPage.java:478)
+	at hpe.SSDSelectorTool.SSDResultsPages.ToVerifyReadPerformanceLabel(SSDResultsPages.java:200)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1561668557", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1561668557'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;collapse1&quot;]/div/div[4]/div/div[2]/div[2]/div/div[4]/div[1]/div[3]/div/div[1]&quot;}
+  (Session info: chrome=88.0.4324.104)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;DESKTOP-D27FDN2&apos;, ip: &apos;16.214.208.221&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 88.0.4324.104, chrome: {chromedriverVersion: 88.0.4324.96 (68dba2d8a0b14..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60885}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fa976167618717157b5c5cdaf2fae000
+*** Element info: {Using=xpath, value=//*[@id=&quot;collapse1&quot;]/div/div[4]/div/div[2]/div[2]/div/div[4]/div[1]/div[3]/div/div[1]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy14.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy18.getText(Unknown Source)
+	at SSDPageObjects.SSDResultPage.ResultReadPerformanceLabel(SSDResultPage.java:478)
+	at hpe.SSDSelectorTool.SSDResultsPages.ToVerifyReadPerformanceLabel(SSDResultsPages.java:200)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>20</td>
+<td>hpe.SSDSelectorTool.SSDResultsPages@1992eaf4</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDResultsPages.ToVerifySeverTypeDisplayed()'><b>ToVerifySeverTypeDisplayed</b><br>Test class: hpe.SSDSelectorTool.SSDResultsPages</td>
+<td><div><pre>java.lang.AssertionError: expected [] but found [HPE Apollo Systems                ]
+	at SSDPageObjects.SSDResultPage.ResultServerType(SSDResultPage.java:438)
+	at hpe.SSDSelectorTool.SSDResultsPages.ToVerifySeverTypeDisplayed(SSDResultsPages.java:169)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2126392903", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2126392903'><pre>java.lang.AssertionError: expected [] but found [HPE Apollo Systems                ]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at SSDPageObjects.SSDResultPage.ResultServerType(SSDResultPage.java:438)
+	at hpe.SSDSelectorTool.SSDResultsPages.ToVerifySeverTypeDisplayed(SSDResultsPages.java:169)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDResultsPages@1992eaf4</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDWorkLoad.LetStart()'><b>LetStart</b><br>Test class: hpe.SSDSelectorTool.SSDWorkLoad</td>
+<td></td>
+<td>32</td>
+<td>hpe.SSDSelectorTool.SSDWorkLoad@659eef7</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDWorkLoad.NextBtn()'><b>NextBtn</b><br>Test class: hpe.SSDSelectorTool.SSDWorkLoad</td>
+<td></td>
+<td>2</td>
+<td>hpe.SSDSelectorTool.SSDWorkLoad@659eef7</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDDrvCapacity.ToCapacityNextBtn()'><b>ToCapacityNextBtn</b><br>Test class: hpe.SSDSelectorTool.SSDDrvCapacity</td>
+<td></td>
+<td>4</td>
+<td>hpe.SSDSelectorTool.SSDDrvCapacity@1c9f0a20</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDType.ToVerfiyBackBtn()'><b>ToVerfiyBackBtn</b><br>Test class: hpe.SSDSelectorTool.SSDType</td>
+<td></td>
+<td>5</td>
+<td>hpe.SSDSelectorTool.SSDType@162be91c</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDType.ToVerfiyNextBtn()'><b>ToVerfiyNextBtn</b><br>Test class: hpe.SSDSelectorTool.SSDType</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDType@162be91c</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDType.ToVerfiySSDNextBtn()'><b>ToVerfiySSDNextBtn</b><br>Test class: hpe.SSDSelectorTool.SSDType</td>
+<td></td>
+<td>5</td>
+<td>hpe.SSDSelectorTool.SSDType@162be91c</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDServerType.ToVerfiyServerModelDropDown()'><b>ToVerfiyServerModelDropDown</b><br>Test class: hpe.SSDSelectorTool.SSDServerType</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDServerType@2488b073</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDWorkLoad.ToVerifyAllReadIntensiveSelected()'><b>ToVerifyAllReadIntensiveSelected</b><br>Test class: hpe.SSDSelectorTool.SSDWorkLoad</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDWorkLoad@659eef7</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDServerType.ToVerifyBackButton()'><b>ToVerifyBackButton</b><br>Test class: hpe.SSDSelectorTool.SSDServerType</td>
+<td></td>
+<td>6</td>
+<td>hpe.SSDSelectorTool.SSDServerType@2488b073</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDBestAvailPage.ToVerifyBestAvailabilityNextBtn()'><b>ToVerifyBestAvailabilityNextBtn</b><br>Test class: hpe.SSDSelectorTool.SSDBestAvailPage</td>
+<td></td>
+<td>9</td>
+<td>hpe.SSDSelectorTool.SSDBestAvailPage@7db82169</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDDrvCapacity.ToVerifyCapacityPageURL()'><b>ToVerifyCapacityPageURL</b><br>Test class: hpe.SSDSelectorTool.SSDDrvCapacity</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDDrvCapacity@1c9f0a20</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDBestAvailPage.ToVerifyClickMainstreamNext()'><b>ToVerifyClickMainstreamNext</b><br>Test class: hpe.SSDSelectorTool.SSDBestAvailPage</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDBestAvailPage@7db82169</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDBestAvailPage.ToVerifyClickMainstreamNon()'><b>ToVerifyClickMainstreamNon</b><br>Test class: hpe.SSDSelectorTool.SSDBestAvailPage</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDBestAvailPage@7db82169</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDDrvCapacity.ToVerifyDrivCapacityNxtBtn()'><b>ToVerifyDrivCapacityNxtBtn</b><br>Test class: hpe.SSDSelectorTool.SSDDrvCapacity</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDDrvCapacity@1c9f0a20</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDFormFactorType.ToVerifyFFLFFImage()'><b>ToVerifyFFLFFImage</b><br>Test class: hpe.SSDSelectorTool.SSDFormFactorType</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDFormFactorType@1cd201a8</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDFormFactorType.ToVerifyFFLFFSelected()'><b>ToVerifyFFLFFSelected</b><br>Test class: hpe.SSDSelectorTool.SSDFormFactorType</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDFormFactorType@1cd201a8</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDFormFactorType.ToVerifyFFM2EDisplayed()'><b>ToVerifyFFM2EDisplayed</b><br>Test class: hpe.SSDSelectorTool.SSDFormFactorType</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDFormFactorType@1cd201a8</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDFormFactorType.ToVerifyFFM2ESelected()'><b>ToVerifyFFM2ESelected</b><br>Test class: hpe.SSDSelectorTool.SSDFormFactorType</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDFormFactorType@1cd201a8</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDFormFactorType.ToVerifyFFM2Image()'><b>ToVerifyFFM2Image</b><br>Test class: hpe.SSDSelectorTool.SSDFormFactorType</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDFormFactorType@1cd201a8</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDFormFactorType.ToVerifyFFM2Selected()'><b>ToVerifyFFM2Selected</b><br>Test class: hpe.SSDSelectorTool.SSDFormFactorType</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDFormFactorType@1cd201a8</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDFormFactorType.ToVerifyFFNxtBtn()'><b>ToVerifyFFNxtBtn</b><br>Test class: hpe.SSDSelectorTool.SSDFormFactorType</td>
+<td></td>
+<td>3</td>
+<td>hpe.SSDSelectorTool.SSDFormFactorType@1cd201a8</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDFormFactorType.ToVerifyFFSFFImage()'><b>ToVerifyFFSFFImage</b><br>Test class: hpe.SSDSelectorTool.SSDFormFactorType</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDFormFactorType@1cd201a8</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDFormFactorType.ToVerifyFFSFFSelected()'><b>ToVerifyFFSFFSelected</b><br>Test class: hpe.SSDSelectorTool.SSDFormFactorType</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDFormFactorType@1cd201a8</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDFormFactorType.ToVerifyFFSearchIcon()'><b>ToVerifyFFSearchIcon</b><br>Test class: hpe.SSDSelectorTool.SSDFormFactorType</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDFormFactorType@1cd201a8</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDResultsPages.ToVerifyFeedBackLabel()'><b>ToVerifyFeedBackLabel</b><br>Test class: hpe.SSDSelectorTool.SSDResultsPages</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDResultsPages@1992eaf4</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDFormFactorType.ToVerifyFormFactorPageNxtBtn()'><b>ToVerifyFormFactorPageNxtBtn</b><br>Test class: hpe.SSDSelectorTool.SSDFormFactorType</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDFormFactorType@1cd201a8</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDFormFactorType.ToVerifyFormFactorPageURL()'><b>ToVerifyFormFactorPageURL</b><br>Test class: hpe.SSDSelectorTool.SSDFormFactorType</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDFormFactorType@1cd201a8</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDInterfaceType.ToVerifyInterfaceTypeNxtBtn()'><b>ToVerifyInterfaceTypeNxtBtn</b><br>Test class: hpe.SSDSelectorTool.SSDInterfaceType</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDInterfaceType@55787112</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDInterfaceType.ToVerifyInterfaceTypePageURL()'><b>ToVerifyInterfaceTypePageURL</b><br>Test class: hpe.SSDSelectorTool.SSDInterfaceType</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDInterfaceType@55787112</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDWorkLoad.ToVerifyLearnAboutWorkload()'><b>ToVerifyLearnAboutWorkload</b><br>Test class: hpe.SSDSelectorTool.SSDWorkLoad</td>
+<td></td>
+<td>1</td>
+<td>hpe.SSDSelectorTool.SSDWorkLoad@659eef7</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDBestAvailPage.ToVerifyMainNxtBtn()'><b>ToVerifyMainNxtBtn</b><br>Test class: hpe.SSDSelectorTool.SSDBestAvailPage</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDBestAvailPage@7db82169</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDBestAvailPage.ToVerifyMainstream()'><b>ToVerifyMainstream</b><br>Test class: hpe.SSDSelectorTool.SSDBestAvailPage</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDBestAvailPage@7db82169</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDBestAvailPage.ToVerifyMainstreamPageURL()'><b>ToVerifyMainstreamPageURL</b><br>Test class: hpe.SSDSelectorTool.SSDBestAvailPage</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDBestAvailPage@7db82169</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDType.ToVerifyMixedSSDSelected()'><b>ToVerifyMixedSSDSelected</b><br>Test class: hpe.SSDSelectorTool.SSDType</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDType@162be91c</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDDrvCapacity.ToVerifyMoveMaxSlider()'><b>ToVerifyMoveMaxSlider</b><br>Test class: hpe.SSDSelectorTool.SSDDrvCapacity</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDDrvCapacity@1c9f0a20</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDDrvCapacity.ToVerifyMoveMinSlider()'><b>ToVerifyMoveMinSlider</b><br>Test class: hpe.SSDSelectorTool.SSDDrvCapacity</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDDrvCapacity@1c9f0a20</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDInterfaceType.ToVerifyNVMeAutoSelected()'><b>ToVerifyNVMeAutoSelected</b><br>Test class: hpe.SSDSelectorTool.SSDInterfaceType</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDInterfaceType@55787112</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDInterfaceType.ToVerifyNextBtn()'><b>ToVerifyNextBtn</b><br>Test class: hpe.SSDSelectorTool.SSDInterfaceType</td>
+<td></td>
+<td>10</td>
+<td>hpe.SSDSelectorTool.SSDInterfaceType@55787112</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDWorkLoad.ToVerifyNextButton()'><b>ToVerifyNextButton</b><br>Test class: hpe.SSDSelectorTool.SSDWorkLoad</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDWorkLoad@659eef7</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDWorkLoad.ToVerifyNextButtonEnabled()'><b>ToVerifyNextButtonEnabled</b><br>Test class: hpe.SSDSelectorTool.SSDWorkLoad</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDWorkLoad@659eef7</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDBestAvailPage.ToVerifyNextSelectAll()'><b>ToVerifyNextSelectAll</b><br>Test class: hpe.SSDSelectorTool.SSDBestAvailPage</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDBestAvailPage@7db82169</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDBestAvailPage.ToVerifyNonMainstream()'><b>ToVerifyNonMainstream</b><br>Test class: hpe.SSDSelectorTool.SSDBestAvailPage</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDBestAvailPage@7db82169</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDResultsPages.ToVerifyPrintLabel()'><b>ToVerifyPrintLabel</b><br>Test class: hpe.SSDSelectorTool.SSDResultsPages</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDResultsPages@1992eaf4</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDWorkLoad.ToVerifyReadIntensiveNotSelected()'><b>ToVerifyReadIntensiveNotSelected</b><br>Test class: hpe.SSDSelectorTool.SSDWorkLoad</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDWorkLoad@659eef7</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDType.ToVerifyReadSSDSelected()'><b>ToVerifyReadSSDSelected</b><br>Test class: hpe.SSDSelectorTool.SSDType</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDType@162be91c</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDResultsPages.ToVerifyRefineResultsLink()'><b>ToVerifyRefineResultsLink</b><br>Test class: hpe.SSDSelectorTool.SSDResultsPages</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDResultsPages@1992eaf4</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDResultsPages.ToVerifyRefineYourResultsLabel()'><b>ToVerifyRefineYourResultsLabel</b><br>Test class: hpe.SSDSelectorTool.SSDResultsPages</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDResultsPages@1992eaf4</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDResultsPages.ToVerifyResultPageURL()'><b>ToVerifyResultPageURL</b><br>Test class: hpe.SSDSelectorTool.SSDResultsPages</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDResultsPages@1992eaf4</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDInterfaceType.ToVerifySASAutoSelected()'><b>ToVerifySASAutoSelected</b><br>Test class: hpe.SSDSelectorTool.SSDInterfaceType</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDInterfaceType@55787112</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDInterfaceType.ToVerifySATAAutoSelected()'><b>ToVerifySATAAutoSelected</b><br>Test class: hpe.SSDSelectorTool.SSDInterfaceType</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDInterfaceType@55787112</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDResultsPages.ToVerifySKUIDDisplayed()'><b>ToVerifySKUIDDisplayed</b><br>Test class: hpe.SSDSelectorTool.SSDResultsPages</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDResultsPages@1992eaf4</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDResultsPages.ToVerifySSDImage()'><b>ToVerifySSDImage</b><br>Test class: hpe.SSDSelectorTool.SSDResultsPages</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDResultsPages@1992eaf4</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDResultsPages.ToVerifySSDName()'><b>ToVerifySSDName</b><br>Test class: hpe.SSDSelectorTool.SSDResultsPages</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDResultsPages@1992eaf4</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDResultsPages.ToVerifySSDPortfolioAlignmentlabel()'><b>ToVerifySSDPortfolioAlignmentlabel</b><br>Test class: hpe.SSDSelectorTool.SSDResultsPages</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDResultsPages@1992eaf4</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDResultsPages.ToVerifySSDPortfolioLink()'><b>ToVerifySSDPortfolioLink</b><br>Test class: hpe.SSDSelectorTool.SSDResultsPages</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDResultsPages@1992eaf4</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDResultsPages.ToVerifySSDShowLess()'><b>ToVerifySSDShowLess</b><br>Test class: hpe.SSDSelectorTool.SSDResultsPages</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDResultsPages@1992eaf4</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDResultsPages.ToVerifySSDShowMore()'><b>ToVerifySSDShowMore</b><br>Test class: hpe.SSDSelectorTool.SSDResultsPages</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDResultsPages@1992eaf4</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDType.ToVerifySSDTypePage()'><b>ToVerifySSDTypePage</b><br>Test class: hpe.SSDSelectorTool.SSDType</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDType@162be91c</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDDrvCapacity.ToVerifySearchIcon()'><b>ToVerifySearchIcon</b><br>Test class: hpe.SSDSelectorTool.SSDDrvCapacity</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDDrvCapacity@1c9f0a20</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDInterfaceType.ToVerifySearchIcon()'><b>ToVerifySearchIcon</b><br>Test class: hpe.SSDSelectorTool.SSDInterfaceType</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDInterfaceType@55787112</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDBestAvailPage.ToVerifySearchIcon()'><b>ToVerifySearchIcon</b><br>Test class: hpe.SSDSelectorTool.SSDBestAvailPage</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDBestAvailPage@7db82169</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDResultsPages.ToVerifySearchIcon()'><b>ToVerifySearchIcon</b><br>Test class: hpe.SSDSelectorTool.SSDResultsPages</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDResultsPages@1992eaf4</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDType.ToVerifySelectAll()'><b>ToVerifySelectAll</b><br>Test class: hpe.SSDSelectorTool.SSDType</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDType@162be91c</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDServerType.ToVerifySelectAll()'><b>ToVerifySelectAll</b><br>Test class: hpe.SSDSelectorTool.SSDServerType</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDServerType@2488b073</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDResultsPages.ToVerifyServerCompactability()'><b>ToVerifyServerCompactability</b><br>Test class: hpe.SSDSelectorTool.SSDResultsPages</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDResultsPages@1992eaf4</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDServerType.ToVerifyServerModelNxtBtn()'><b>ToVerifyServerModelNxtBtn</b><br>Test class: hpe.SSDSelectorTool.SSDServerType</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDServerType@2488b073</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDServerType.ToVerifyServerNextBtn()'><b>ToVerifyServerNextBtn</b><br>Test class: hpe.SSDSelectorTool.SSDServerType</td>
+<td></td>
+<td>3</td>
+<td>hpe.SSDSelectorTool.SSDServerType@2488b073</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDServerType.ToVerifyServerTypeDropDown()'><b>ToVerifyServerTypeDropDown</b><br>Test class: hpe.SSDSelectorTool.SSDServerType</td>
+<td></td>
+<td>1</td>
+<td>hpe.SSDSelectorTool.SSDServerType@2488b073</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDServerType.ToVerifyServerTypeURL()'><b>ToVerifyServerTypeURL</b><br>Test class: hpe.SSDSelectorTool.SSDServerType</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDServerType@2488b073</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDResultsPages.ToVerifyStartOverLabel()'><b>ToVerifyStartOverLabel</b><br>Test class: hpe.SSDSelectorTool.SSDResultsPages</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDResultsPages@1992eaf4</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDServerType.ToVerifyTargetTable()'><b>ToVerifyTargetTable</b><br>Test class: hpe.SSDSelectorTool.SSDServerType</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDServerType@2488b073</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDType.ToVerifyVROSSDSelected()'><b>ToVerifyVROSSDSelected</b><br>Test class: hpe.SSDSelectorTool.SSDType</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDType@162be91c</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDServerType.ToVerifyWorkledSelected()'><b>ToVerifyWorkledSelected</b><br>Test class: hpe.SSDSelectorTool.SSDServerType</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDServerType@2488b073</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDType.ToVerifyWriteSSDSelected()'><b>ToVerifyWriteSSDSelected</b><br>Test class: hpe.SSDSelectorTool.SSDType</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDType@162be91c</td></tr>
+<tr>
+<td title='hpe.SSDSelectorTool.SSDResultsPages.ToVerityResultsDisplay()'><b>ToVerityResultsDisplay</b><br>Test class: hpe.SSDSelectorTool.SSDResultsPages</td>
+<td></td>
+<td>0</td>
+<td>hpe.SSDSelectorTool.SSDResultsPages@1992eaf4</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 35, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 160.018 sec <<< FAILURE!
+ToVerifySSDResults(hpe.SSDSelectorTool.SSDIKnowPageTest)  Time elapsed: 0.108 sec  <<< FAILURE!
+java.lang.AssertionError: expected [112 -  SSDs meet your requirements] but found [250 -  SSDs meet your requirements]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at hpe.SSDSelectorTool.SSDIKnowPageTest.ToVerifySSDResults(SSDIKnowPageTest.java:107)
+
